@@ -8,6 +8,9 @@ WORKDIR /truffle
 COPY package*.json ./
 
 # Install dependencies
+RUN npm install -g truffle
+
+# Install dependencies
 RUN npm install
 
 # Copy the rest of the Truffle project files
